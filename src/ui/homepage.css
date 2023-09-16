@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 300%;
+  margin-bottom: 1vw;
+  color: aliceblue;
+}
+
+.subtitle {
+  font-size: 200%;
+  margin-bottom: 2rem;
+  color: aliceblue;
+}
+
+.wrapper{
+    background:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url("https://cdn.vox-cdn.com/thumbor/nd15cjQLxTPx16lCZYerzVNopkQ=/0x0:3000x1800/1200x800/filters:focal(950x690:1430x1170)/cdn.vox-cdn.com/uploads/chorus_image/image/70116214/draft02.0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #ff5722;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 180%;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f4511e;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .button{
+    font-size: large;
+  }
+  .title{
+    font-size: 200%;
+  }
+  .subtitle{
+    font-size: 100%;
+  }
+}

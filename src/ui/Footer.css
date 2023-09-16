@@ -1,0 +1,69 @@
+.footer {
+  background-color: #222;
+  color: #f2f2f2;
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap; /* add this property to allow flex items to wrap */
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f2f2f2;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap; /* add this property to allow social links to wrap */
+}
+
+.social-link {
+  background-color: #f2f2f2;
+  color: #333333;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-link > svg{
+  font-size: 35px;
+}
+
+.social-link:hover {
+  background-color: #e0e0e0;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* add a media query to adjust the styles for small screens */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* change to a column layout for small screens */
+    align-items: flex-start; /* align items to the left for small screens */
+    padding: 5vw; 
+  }
+
+  .footer-links a {
+    margin: 10px 10px; /* add vertical margin to links for small screens */
+  }
+
+  .footer-social {
+    margin-top: 20px; /* add margin to the top of the social links for small screens */
+  }
+
+  .social-link {
+    margin-right: 10px; /* remove right margin for social links for small screens */
+  }
+  .footer-text{
+    margin-top: 20px;
+  }
+}

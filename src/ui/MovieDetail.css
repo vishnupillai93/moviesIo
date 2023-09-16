@@ -1,0 +1,73 @@
+.movie-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+  }
+  
+  .poster img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(24, 62, 233, 0.863);
+  }
+  
+  .info {
+    margin-left: 50px;
+    max-width: 600px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .metadata {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .metadata-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .metadata-item span:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .metadata-item span:last-child {
+    font-size: 16px;
+  }
+
+  .similar-movies{
+    color: orangered;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1068px) {
+    .info{
+        margin-left: 5px;
+        margin-top: 40px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+    }
+  }
+  
